@@ -8,14 +8,14 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico">
-    
-    <!-- app css -->
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/bower_components/rv-common-style/dist/css/rise.min.css" rel="stylesheet" type="text/css">
 
     <!-- dependencies -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
     <?php wp_head(); ?>
+
+    <!-- app css -->
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/bower_components/rv-common-style/dist/css/rise.min.css" rel="stylesheet" type="text/css">
 </head>
 <body <?php body_class('website'); ?>>
 

@@ -26,6 +26,19 @@ function headstart_head_cleanup() {
 add_action('init', 'headstart_head_cleanup');
 
 /**************************************************************** 
+remove jquery migrate
+****************************************************************/
+add_filter( 'wp_default_scripts', 'remove_jquery_migrate' );
+function remove_jquery_migrate( &$scripts)
+{
+    if(!is_admin())
+    {
+        $scripts->remove( 'jquery');
+        //$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.11.2' );
+    }
+}
+
+/**************************************************************** 
 remove script and css ?ver
 ****************************************************************/
 function remove_cssjs_ver( $src ) {
