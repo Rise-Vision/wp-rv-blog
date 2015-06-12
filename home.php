@@ -9,7 +9,7 @@
 					<?php
 						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 						$args = array( 'post_type' => 'post', 'paged' => $paged );
-						$recent = query_posts($args);
+						query_posts($args);
 			        	if (have_posts()) : $cnt = 0;
 						while(have_posts()) : the_post(); ++$cnt;
 					?>
