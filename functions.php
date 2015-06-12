@@ -34,9 +34,21 @@ function remove_jquery_migrate( &$scripts)
     if(!is_admin())
     {
         $scripts->remove( 'jquery');
-        //$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.11.2' );
+        $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.11.3' );
     }
 }
+
+/**************************************************************** 
+load jquery from google
+****************************************************************/
+function jquery_cdn() {
+   if (!is_admin()) {
+      wp_deregister_script('jquery'); 
+      wp_register_script('jquery', ("http".($_SERVER['SERVER_PORT'] == 443 ? "s" : "")."://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"), false, '1.11.0');
+      wp_enqueue_script('jquery');
+   }
+}
+add_action('init', 'jquery_cdn');
 
 /**************************************************************** 
 remove script and css ?ver
