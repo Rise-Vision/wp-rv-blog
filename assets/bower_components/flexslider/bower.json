@@ -27,14 +27,5 @@
   ],
   "dependencies": {
     "jquery": "1.11.3"
-  },
-  "_release": "2.5.0",
-  "_resolution": {
-    "type": "version",
-    "tag": "2.5.0",
-    "commit": "8ed61acca0a1c1f1242ebb0cdb8291be6d4a0d91"
-  },
-  "_source": "git://github.com/woothemes/FlexSlider.git",
-  "_target": "*",
-  "_originalSource": "flexslider"
+  }
 }

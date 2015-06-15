@@ -24,6 +24,20 @@ body {
   /*background: transparent;*/
 }
 
+/**    
+* Start of workaround for Bootstrap bug where content shifts when modal   
+* is opened.
+*   
+* https://github.com/twbs/bootstrap/issues/9855   
+*/    
+html {   
+  overflow: hidden;    
+  -ms-overflow-style: scrollbar;   
+}    
+   
+body { overflow: auto;}   
+/* End of workaround */
+
 h1, h2, h3, h4, h5, h6 { font-weight: bold;}
 
 a:hover {
@@ -72,6 +86,7 @@ a:hover {
   .navbar-nav {
     > a {
       border: #fff solid 1px;
+
       /* Visual */
       font-weight: bold;
     }
@@ -316,27 +331,34 @@ a:hover {
   /* Display & Box Model */
   /* Visual */
   text-align: center;
+
   a {
     /* Display & Box Model */
     display: block;
-    padding: 0;
+    padding: 10px 15px;
+
     /* Visual */
     color: $gray;
+
     &:hover {
       background-color: $lighter-gray;
     }
   }
+
   span {
     /* Display & Box Model */
     display: block;
     width: 100%;
+
     /* Visual */
   }
+
   .fa {
     @extend .fa-box;
     @extend .glyphicon-box;
     margin: 0 auto;
   }
+
   .fa::before { font-size: 40px; }
 }
 
@@ -466,8 +488,7 @@ a:hover {
   /* Display & Box Model */
   width: 30px;
   height: 30px;
-  background-color: $lighter-gray;
-  border:1px solid $gray;
+
   /* Visual */
   border-radius: 50%;
   vertical-align: top;
@@ -515,7 +536,7 @@ a:hover {
 
   }
 
-  .navbar-header { padding: 0 10px; }
+  .navbar-header { padding: 0; }
 
   .navbar-left .navbar-nav > li > a {
     padding: 0 10px;
@@ -708,6 +729,11 @@ ul.social {
       background-position: -96px 0;
     }
   }
+}
+
+.button-row {
+  overflow: hidden;
+  margin: 40px 0 40px;
 }
 
 /* Media queries
