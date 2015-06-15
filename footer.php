@@ -1,4 +1,4 @@
-  	<div ng-include="'<?php echo get_template_directory_uri(); ?>/_partials/footer.html'" scope="" onload=""></div>
+  	<?php /* ?><div ng-include="'<?php echo get_template_directory_uri(); ?>/_partials/footer.html'" scope="" onload=""></div><?php */ ?>
 
 	<!-- dependencies -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.js"></script>
