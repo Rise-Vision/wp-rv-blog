@@ -14,6 +14,7 @@
 					<article class="article">
 						<span class="date"><?php the_time('F j, Y') ?></span>
 						<span class="read-time"><i class="fa fa-clock-o"></i> <?php echo get_the_date(); ?></span>
+
 						<?php
 							if(has_post_thumbnail()) { 
 								echo '<div class="image">';
@@ -24,12 +25,17 @@
 					           	echo '</div><!--image-->';
 						    }
 						?>
-						<?php display_category(); ?>
+
+						<?php //display_category(); ?>
+
 						<h2 class="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>   
+
 						<?php display_tags(); ?>
+
 						<div class="article-content">
 							<?php the_content(); ?>
 						</div>
+
 						<div class="blog-footer">
 			  				<div class="pull-right blog-icons addthis_toolbox addthis_default_style" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title_attribute(); ?>">
 								<a class="btn btn-link addthis_button_twitter"><i class="fa fa-twitter"></i></a>
@@ -38,8 +44,11 @@
 								<a class="btn btn-link addthis_button_google_plusone_share"><i class="fa fa-google-plus"></i></a>
 							</div>
 						</div>
+
 						<br><br>
+
          				<div id="disqus_thread"></div>
+         				
 					</article>
 
 		  			<?php

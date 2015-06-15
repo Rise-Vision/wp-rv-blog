@@ -21,7 +21,7 @@
 		}
 	?>
 
-	<?php display_category(); ?>
+	<?php //display_category(); ?>
 
 	<h2 class="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>   
 
