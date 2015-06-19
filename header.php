@@ -25,10 +25,10 @@
                 <ul class="nav navbar-nav navbar-right pull-right">
                     <li class="header-search">
                         <form action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                            <input type="hidden" name="post_type" value="post">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-search"></i></span>
                                 <input name="s" type="text" class="form-control" placeholder="Search Blog">
-                                <input type="hidden" name="post_type" value="post">
                             </div>
                         </form>
                         
