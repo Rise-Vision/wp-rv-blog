@@ -20,7 +20,11 @@
 								echo '<div class="image">';
 									echo '<a href="'. get_the_permalink() .'">';
 										$image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
-										echo '<img class="img-responsive aligncenter featured-image" src="' . $image_src[0] . '"/>';
+										if($image_src){
+											echo '<img class="img-responsive aligncenter featured-image" src="' . $image_src[0] . '"/>';
+										}else{
+											echo '<img class="img-responsive aligncenter first-image" src="' . catch_that_image() . '"/>';
+										}
 									echo '</a>';
 								echo '</div><!--image-->';
 							}elseif(catch_that_image()){
