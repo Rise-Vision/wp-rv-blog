@@ -33,7 +33,10 @@
 						<?php display_tags(); ?>
 
 						<div class="article-content">
-							<?php the_content(); ?>
+							<?php 
+								the_content(); 
+								edit_post_link('edit', '<p>', '</p>');
+							?>
 						</div>
 
 						<div class="blog-footer">
