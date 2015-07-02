@@ -21,11 +21,17 @@
 							if(has_post_thumbnail()) { 
 								echo '<div class="image">';
 									echo '<a href="'. get_the_permalink() .'">';
-							       		$image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
-						           		echo '<img class="img-responsive aligncenter" src="' . $image_src[0] . '"/>';
-						           	echo '</a>';
-					           	echo '</div><!--image-->';
-						    }
+										$image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
+										echo '<img class="img-responsive aligncenter featured-image" src="' . $image_src[0] . '"/>';
+									echo '</a>';
+								echo '</div><!--image-->';
+							}elseif(catch_that_image()){
+								echo '<div class="image">';
+									echo '<a href="'. get_the_permalink() .'">';
+										echo '<img class="img-responsive aligncenter first-image" src="' . catch_that_image() . '"/>';
+									echo '</a>';
+								echo '</div><!--image-->';
+							}
 						?>
 						<?php display_category(); ?>
 						<h2 class="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>   
