@@ -39,6 +39,6 @@
 	<div class="add-top">
 		<a class="btn btn-default btn-sm" href="https://plus.google.com/b/116547189186392700067"><i class="fa fa-google-plus fa-lg"></i></a>
 		<a class="btn btn-default btn-sm" href="https://twitter.com/risevision"><i class="fa fa-twitter fa-lg"></i></a>
-		<a href="/contact" class="btn btn-sm btn-default">Contact Us</a>
+		<a href="http://www.risevision.com/contact" class="btn btn-sm btn-default">Contact Us</a>
 	</div>
 </script>

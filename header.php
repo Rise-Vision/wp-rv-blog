@@ -47,8 +47,8 @@
                     <p class="lead green-line">Product News, Customer Stories and Updates from Rise Vision</p>
                 </div>
                 <div class="col-sm-12 col-lg-4">
-                    <a href="index.html" class="half-top btn btn-primary btn-lg btn-block">Learn More About Rise Vision</a>
-                    <a href="webinars.html" class="btn btn-default btn-lg btn-block">Sign Up for the Getting Started Webinar</a>
+                    <a href="http://www.risevision.com/" class="half-top btn btn-primary btn-lg btn-block">Learn More About Rise Vision</a>
+                    <a href="http://www.risevision.com/webinar" class="btn btn-default btn-lg btn-block">Sign Up for the Getting Started Webinar</a>
                 </div>
             </div>
         </div><!--container-->
