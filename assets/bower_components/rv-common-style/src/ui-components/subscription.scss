@@ -1,8 +1,7 @@
 .subscription-status {
-    font-size: 16px;
-    display: none;
+    font-size: 17px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     padding: 4px;
     text-align: center;
     color: white;
@@ -13,7 +12,9 @@
         background: #4ab767;
     }
     &.trial .btn-white {
-        font-size: 16px;
+        margin-left: 12px;
+        color: green;
+        background-color: white;
     }
     &.expired,
     &.suspended,
@@ -21,19 +22,12 @@
         color: #d20606;
         background: #f0b9b8;
     }
-
     &.expired .btn-white,
     &.suspended .btn-white,
     &.cancelled .btn-white {
+        margin-left: 12px;
         color: #d20606;
         background-color: white;
     }
 
-    @media (max-width: 768px) {
-        .btn-white {
-            display: block;
-            width: 100%;
-            margin-top: 10px;
-        }
-    }
 }

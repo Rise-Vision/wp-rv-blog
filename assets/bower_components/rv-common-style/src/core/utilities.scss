@@ -97,6 +97,12 @@ span.ellipsis {
   height: 32px;
   margin: 0;
 }
+
+svg {
+  width: 64px;
+  height: 64px;
+}
+
 .app-navigation path:first-child {
   fill:#4AB767;
 }
@@ -104,18 +110,16 @@ span.ellipsis {
   fill:#2D60AD;
 }
 
-svg {
-  width: 64px;
-  height: 64px;
-}
-
 .file-empty-state path {
   fill:#969595;
   opacity: .65;
 }
+
+
 svg:hover path {
   fill: rgba(0,0,0,.7);
 }
+
 path {
   fill: rgba(0,0,0,.4);
 }
@@ -134,6 +138,3 @@ path {
   color: $white;
 }
 
-.double-margin {
-  margin-bottom: 40px !important;
-}
