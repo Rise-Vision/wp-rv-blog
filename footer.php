@@ -26,7 +26,7 @@
 	<?php if(is_single()){ ?>
 		<script type="text/javascript">
 		  	/* * * CONFIGURATION VARIABLES * * */
-		  	var disqus_shortname = 'testrvweb';
+		  	var disqus_shortname = 'blogrisevision';
 		  
 		  	/* * * DON'T EDIT BELOW THIS LINE * * */
 		  	(function() {
@@ -39,7 +39,7 @@
 	<?php }else{ ?>
 		<script type="text/javascript">
 		  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-		  	var disqus_shortname = 'testrvweb'; // required: replace example with your forum shortname
+		  	var disqus_shortname = 'blogrisevision'; // required: replace example with your forum shortname
 
 		  	/* * * DON'T EDIT BELOW THIS LINE * * */
 		  	(function () {
