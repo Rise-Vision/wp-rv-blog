@@ -21,7 +21,7 @@
     <nav class="navbar navbar-default navbar-static-top" id="sticky-nav">
         <div class="container">
             <div class="navbar-header" style="width: 100%;">
-                <a href="/" class="navbar-brand visible-md visible-lg"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" class="img-responsive logo-small"></a>
+                <a href="http://www.risevision.com/" class="navbar-brand visible-md visible-lg"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" class="img-responsive logo-small"></a>
                 <a class="navbar-brand hidden-md hidden-lg text-center" href=""><i class="fa fa-bars"></i></a>
                 <ul class="nav navbar-nav navbar-right pull-right">
                     <li class="header-search">
