@@ -13,7 +13,9 @@
 
 					<article class="article">
 						<span class="date"><?php the_time('F j, Y') ?></span>
+						<?php /* ?>
 						<span class="read-time"><i class="fa fa-clock-o"></i> <?php echo get_the_date(); ?></span>
+						<?php */ ?>
 
 						<?php
 							if(has_post_thumbnail()) { 
