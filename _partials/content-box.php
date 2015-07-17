@@ -1,9 +1,4 @@
-<aside class="col-sm-5 col-lg-4 aside-section">
-	<div class="visible-xs" ng-include="'sidebar.html'" scope="" onload=""></div>
-	<div class="hidden-xs" id="sticker" ng-include="'sidebar.html'" scope="" onload=""></div>
-</aside>
-<script type="text/ng-template" id="sidebar.html">
-  	<div class="content-box">
+	<div class="content-box">
 		<div class="content-box-body">
 			<h3>Weekly Newsletter</h3>
 			<p>Sign up to receive weekly updates from the Rise Vision blog by email.</p>
@@ -44,4 +39,3 @@
 		<a class="btn btn-default btn-sm" href="https://twitter.com/risevision"><i class="fa fa-twitter fa-lg"></i></a>
 		<?php /* ?><a href="http://www.risevision.com/contact" class="btn btn-sm btn-default">Contact Us</a><?php */ ?>
 	</div>
-</script>

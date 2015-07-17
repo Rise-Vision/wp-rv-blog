@@ -1,17 +1,4 @@
-  	<?php /* ?><div ng-include="'<?php echo get_template_directory_uri(); ?>/_partials/footer.html'" scope="" onload=""></div><?php */ ?>
 
-	<!-- dependencies -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/bower_components/angular-flexslider/angular-flexslider.js"></script>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-route.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.14/angular-ui-router.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.js"></script>
-	<script src="https://code.angularjs.org/1.2.23/angular-touch.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-
-	<!-- app js -->
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/app.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.sticky.js"></script>
 	<script>
 		$(document).ready(function(){
