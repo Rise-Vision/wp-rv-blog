@@ -2,7 +2,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.sticky.js"></script>
 	<script>
 		$(document).ready(function(){
-			$("#sticker").sticky({topSpacing:60});
+			$("#sticker").sticky({topSpacing:100});
 			$("#sticky-nav").sticky({topSpacing:0});
 	});
 	</script>
