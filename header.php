@@ -18,23 +18,16 @@
 <body <?php body_class('website'); ?>>
 
     <!-- Main View -->
-    <nav class="navbar navbar-default navbar-static-top" id="sticky-nav">
+    <nav class="navbar navbar-default navbar-website navbar-static-top" id="sticky-nav">
         <div class="container">
-            <div class="navbar-header" style="width: 100%;">
-                <a href="http://www.risevision.com/" class="navbar-brand visible-md visible-lg"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" class="img-responsive logo-small"></a>
-                <a class="navbar-brand hidden-md hidden-lg text-center" href=""><i class="fa fa-bars"></i></a>
-                <ul class="nav navbar-nav navbar-right pull-right">
-                    <li class="header-search">
-                        <form action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                            <input type="hidden" name="post_type" value="post">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                                <input name="s" type="text" class="form-control" placeholder="Search Blog">
-                            </div>
-                        </form>
-                        
-                    </li>
-                </ul>
+            <div class="navbar-header" style="width: 100%">
+                <div class="pull-right">
+                    <a href="https://apps-stage-0.risevision.com/signup" class="btn btn-lg btn-primary">Sign Up Free <i class="fa fa-google"></i></a>
+                    <a href="https://apps-stage-0.risevision.com/signin" class="btn btn-lg btn-link">Sign In</a>
+                </div><!--pull-right-->
+
+                <a href="http://www.risevision.com/" class="navbar-brand hidden-xs"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" class="img-responsive"></a>
+
             </div><!--navbar-header-->
         </div><!--container-->
     </nav><!--nav-->
@@ -43,13 +36,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 col-lg-8">
-                    <h1>Rise Vision Blog</h1>
-                    <p class="lead green-line">Product News, Customer Stories and Updates from Rise Vision</p>
+                    <h1 class="remove-top">Rise Vision Blog</h1>
+                    <p class="lead">Product News, Customer Stories and Updates from Rise Vision</p>
                 </div>
                 <div class="col-sm-12 col-lg-4">
-                    <a href="http://www.risevision.com/" class="half-top btn btn-primary btn-lg btn-block">Learn More About Rise Vision</a>
-                    <a href="http://www.risevision.com/webinar" class="btn btn-default btn-lg btn-block">Sign Up for the Getting Started Webinar</a>
+                    <a href="http://www.risevision.com/webinar" class="btn btn-lg btn-default btn-block add-top add-bottom">Sign Up for the Getting Started Webinar</a>
                 </div>
             </div>
+            <form action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <input type="hidden" name="post_type" value="post">
+                <div class="input-group add-bottom">
+                    <span class="input-group-addon"><i class="fa fa-search fa-lg"></i></span>
+                    <input name="s" type="text" class="form-control" placeholder="Search the Blog">
+                </div>
+            </form>
         </div><!--container-->
     </div>
