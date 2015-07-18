@@ -1,7 +1,6 @@
 .website {
   font-size: 18px;
   color: #555;
-  background-color: $lighter-gray;
   background-attachment: fixed;
   line-height: 1.7;
   h1, h2, h3, h4 {
@@ -19,8 +18,8 @@
   }
   h2 {
     font-size: 40px;
-    margin-top: 0;
     font-weight: 300;
+    margin-top: 0;
     @media (max-width: 992px) {font-size:30px;}
   }
   h3 {
@@ -77,10 +76,19 @@
 }
 
 .navbar-website {
+  z-index: 1000;
   padding: 16px 0 !important;
   border-bottom: none;
   height: 76px;
   font-size: 16px;
+  margin-bottom: 0;
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  top: 1px;
+  &.isSticky {
+    border-bottom: 1px solid $light-gray;
+  }
   .container {
     margin: 0 auto;
   }
@@ -112,22 +120,15 @@
   }
 }
 
-.is-sticky {
-  .navbar-website {
-    padding: 8px 0;
-    border-bottom: 1px solid $lighter-gray;
-  }
-}
-
 .home-banner {
-  padding: 144px 0 144px 0;
+  padding: 204px 0 144px 0;
   background: #FFF;
   overflow: hidden;
   .container {
     position: relative;
   }
   @media (max-width: 992px){
-    padding: 16px 0 0 0;
+    padding: 92px 0 0 0;
   }
   .banner-headline {
     float: right;
@@ -363,8 +364,10 @@
     p {padding: 16px;}
   }
   &.row:hover {
-    .offer-box {
-      background-color: lighten($rise-green,44%);
+    @media (min-width: 768px) {
+      .offer-box {
+        background-color: lighten($rise-green,44%);
+      }
     }
   }
   .offer-box {
@@ -617,11 +620,11 @@
 .page-header {
   background: #FFF;
   border: none;
-  padding-top: 48px;
+  padding-top: 124px;
   padding-bottom: 16px;
   margin: 0;
   @media (max-width: 768px) {
-    padding-top: 16px;
+    padding-top: 92px;
   }
   h1 {
     margin-bottom: 0;
@@ -951,10 +954,11 @@
   font-size: 14px;
   display: block;
   font-weight: 500;
-  padding: 4px 16px;
-  margin-top: -32px;
+  padding: 16px;
+  margin-top: -64px;
   margin-bottom: 16px;
   line-height: 22px;
+  position: relative;
   &:hover {
     background-color:lighten($rise-green,5%);
     color: #FFF;
