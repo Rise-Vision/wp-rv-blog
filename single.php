@@ -18,6 +18,7 @@
 						<?php */ ?>
 
 						<?php
+							/*
 							if(has_post_thumbnail()) { 
 								echo '<div class="image">';
 									echo '<a href="'. get_the_permalink() .'">';
@@ -36,6 +37,7 @@
 									echo '</a>';
 								echo '</div><!--image-->';
 							}
+							*/
 						?>
 
 						<?php //display_category(); ?>
