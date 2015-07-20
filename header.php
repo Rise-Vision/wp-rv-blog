@@ -32,7 +32,7 @@
         </div><!--container-->
     </nav><!--nav-->
 
-    <div class="page-header">
+    <div class="page-header blog-header">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 col-lg-8">

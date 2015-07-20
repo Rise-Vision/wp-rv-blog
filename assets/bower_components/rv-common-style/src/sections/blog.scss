@@ -1,8 +1,10 @@
-.blog {
-  .page-header {
+
+.page-header {
+  &.blog-header {
     padding-top: 48px;
   }
 }
+
 
 .article {
   margin-bottom: 48px;
