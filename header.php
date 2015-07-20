@@ -22,8 +22,8 @@
         <div class="container">
             <div class="navbar-header" style="width: 100%">
                 <div class="pull-right">
-                    <a href="https://apps-stage-0.risevision.com/signup" class="btn btn-lg btn-primary">Sign Up Free <i class="fa fa-google"></i></a>
-                    <a href="https://apps-stage-0.risevision.com/signin" class="btn btn-lg btn-link">Sign In</a>
+                    <a href="https://apps.risevision.com/signup" class="btn btn-lg btn-primary">Sign Up Free <i class="fa fa-google"></i></a>
+                    <a href="https://apps.risevision.com/signin" class="btn btn-lg btn-link">Sign In</a>
                 </div><!--pull-right-->
 
                 <a href="http://www.risevision.com/" class="navbar-brand hidden-xs"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" class="img-responsive"></a>
