@@ -73,7 +73,7 @@
 					?>
 						<nav>
 			            	<ul class="pager">
-			              		<li class="previous"><a href="javascript:goBack();"><span aria-hidden="true">&larr;</span> Back</a></li>
+			              		<li class="previous"><a href="" onclick="goBack(); return false;"><span aria-hidden="true">&larr;</span> Back</a></li>
 			            	</ul>
 			          	</nav>
 					<?php 

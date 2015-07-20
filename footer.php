@@ -7,12 +7,15 @@
 		});
 		function goBack() {
 			if (history.length > 1) {
-				// there are items in history property
-				window.history.back();
+				if(document.referrer == ""){
+					window.location = 'http://blog.risevision.com/';
+				} else {
+					// there are items in history property
+					history.back();
+				}
 			} else {
 				window.location = 'http://blog.risevision.com/';
 			}
-			return false;
 		}
 	</script>
 
