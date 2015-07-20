@@ -4,7 +4,16 @@
 		$(document).ready(function(){
 			$("#sticker").sticky({topSpacing:100});
 			$("#sticky-nav").sticky({topSpacing:0});
-	});
+		});
+		function goBack() {
+			if (history.length > 1) {
+				// there are items in history property
+				window.history.back();
+			} else {
+				window.location = 'http://blog.risevision.com/';
+			}
+			return false;
+		}
 	</script>
 
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
