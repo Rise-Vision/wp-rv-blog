@@ -41,7 +41,7 @@
 						<h2 class="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>   
 						<?php display_tags(); ?>
 						<div class="article-content">
-							<?php the_excerpt(); ?>
+							<?php the_content( __( '... Read More', 'sandbox' ) ); ?>
 						</div>
 						<div class="blog-footer">
 			  				<div class="pull-right blog-icons addthis_toolbox addthis_default_style" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title_attribute(); ?>">

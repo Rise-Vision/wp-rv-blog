@@ -40,7 +40,7 @@
 	<?php display_tags(); ?>
 
 	<div class="article-content">
-		<?php the_excerpt(); ?>
+		<?php the_content( __( '... Read More', 'sandbox' ) ); ?>
 	</div>
 						
 	<div class="blog-footer">
