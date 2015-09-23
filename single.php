@@ -54,6 +54,11 @@
 						</div>
 
 						<div class="blog-footer">
+							<nav class="pull-left">
+				            	<ul class="pager">
+				              		<li class="previous"><a href="" onclick="goBack(); return false;"><span aria-hidden="true">&larr;</span> Back</a></li>
+				            	</ul>
+				          	</nav>
 			  				<div class="pull-right blog-icons addthis_toolbox addthis_default_style" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title_attribute(); ?>">
 								<a class="btn btn-link addthis_button_twitter"><i class="fa fa-twitter"></i></a>
 								<a class="btn btn-link addthis_button_facebook"><i class="fa fa-facebook"></i></a>
@@ -70,6 +75,7 @@
 
 		  			<?php
 						endwhile;
+						/*
 					?>
 						<nav>
 			            	<ul class="pager">
@@ -77,6 +83,7 @@
 			            	</ul>
 			          	</nav>
 					<?php 
+						*/
 						endif;
 						wp_reset_query();
 			        ?>
