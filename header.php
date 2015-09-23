@@ -14,6 +14,10 @@
 
     <!-- app css -->
     <link href="<?php echo get_template_directory_uri(); ?>/assets/bower_components/rv-common-style/dist/css/rise.min.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .blog-header h1.remove-top a {color:#222;}
+        .blog-footer ul.pager {margin-top: 0;}
+    </style>
 </head>
 <body <?php body_class('website'); ?>>
 
@@ -36,7 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 col-lg-8">
-                    <h1 class="remove-top">Rise Vision Blog</h1>
+                    <h1 class="remove-top"><a href="<?php bloginfo('url'); ?>">Rise Vision Blog</a></h1>
                     <p class="lead">Product News, Customer Stories and Updates from Rise Vision</p>
                 </div>
                 <div class="col-sm-12 col-lg-4">
